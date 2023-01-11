@@ -12,6 +12,12 @@ pool: Default
 
 steps:
 - task: TerraformCLI@0
+  displayName: 'init'
   inputs:
     command: 'init'
+    allowTelemetryCollection: true
+- task: TerraformCLI@0
+  displayName: plan
+  inputs:
+    command: 'plan'
     allowTelemetryCollection: true
