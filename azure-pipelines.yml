@@ -21,7 +21,7 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
-    environmentServiceName: 'agent'
+    
   displayName: 'init'
 - task: TerraformTaskV3@3
   inputs:
